@@ -54,7 +54,98 @@
         <u>밑줄 형태</u>
         <strike>가운데줄 형태</strike>
 
-    
+        <style>
+                table,tr,td{
+                    border: solid 1px black;
+                }
+                </style>
+                <!-- colspan 열 , rowspan 행-->
+                <!-- thead, tbody, tfoot-->
+                <table summary="대학교 학과별 학번, 이름, 전화번호 정보, 나이">
+                    <caption>대학교 학생 목록</caption>
+                    <thead>
+                    <tr>
+                        <th scope="col">학과</th>
+                        <th scope="col">학번</th>
+                        <th scope="col">이름</th>
+                        <th scope="col">전화번호</th>
+                        <th scope="col">나이</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td rowspan="5">커뮤니케이션디자인과</td> <!-- 가로로 두 칸 사용하기 (열) -->
+                        <td>2019222005</td> <!-- 세로로 두 칸 사용하기 (행) -->
+                        <td>박유미</td>
+                        <td>010-2295-3870</td>
+                        <td>23</td>
+        
+                    </tr>
+                    <tr>
+                            <td>2019222006</td>
+                            <td>개똥이</td>
+                            <td>010-1111-1111</td>
+                            <td>21</td>
+        
+                        </tr>
+                        <tr>
+                                <td>2019222007</td>
+                                <td>말숙이</td>
+                                <td>010-2222-2222</td>
+                                <td>24</td>
+        
+                            </tr>
+                            <tr>
+                                    <td>2019222008</td>
+                                    <td>옥수수</td>
+                                    <td>010-3333-3333</td>
+                                    <td>20</td>
+        
+                                </tr>
+                                <tr>
+                                        <td>2019222009</td>
+                                        <td>수염차</td>
+                                        <td>010-4444-4444</td>
+                                        <td>22</td>
+        
+                                    </tr>
+        
+                </table>
+        
+
+        <!-- from 양식지 -->
+        <form>
+            <input type="text" placeholder="아이디를 입력하세요" />
+            <input type="password" placeholder="패스워드를 입력하세요" />
+            <!-- 라디오는 name이 중요함 -->
+            <input type="radio" name="bt1" checked/>
+            <input type="radio" name="bt1" />
+            <input type="radio" name="bt1" />
+            <!-- 단일선택을 목적으로 하는 입력장치 -->
+            <input type="radio" name="bt2" />
+            <input type="radio" name="bt2" />
+            <input type="radio" name="bt2" />
+            <!-- 복수선택을 목적으로 하는 입력장치 -->
+            <input type="checkbox" checked/>
+            <input type="checkbox" />
+            <input type="checkbox" />
+
+            <!-- 선택박스, 콤보박스 -->
+            <!-- 선택할수 있는 선택지를 미리 알리기 위함, 입력실수 방지 -->
+            <select>
+                <option> 사이트 선택 </option>
+                <option> www.naver.com </option>
+                <option> www.google.com </option>
+            </select>
+
+            <!-- 여러줄의 문자를 입력할때 사용 cols(가로 글자수), rows(세로 줄수)-->
+            <textarea cols="30" rows="5">
+
+            </textarea>
+            <input type="button" value="버튼" />
+            <input type="button" onclick="alert('테스트 버튼이 눌렸습니다.')" value="테스트 버튼" />
+
+            <input type="submit" value="제출" />            
+        </form>
     </body>
 </html>
    
