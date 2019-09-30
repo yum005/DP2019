@@ -8,13 +8,24 @@
         <!-- embed 들어오다. 포함되어 있는 -->
         <style>
             #id_embed{
-                color: #blue;
+                color: blue;
             }
             </style>
     </head>
     <body>
         <div id="id external">external로 적용</div>
         <div id="id embed">embed로 적용</div>
-        <div style="color: #green;">inline으로 적용</div>
+        <div style="color: green;">inline으로 적용</div>
+
+        <!-- html주석 -->
+        <style>
+            /" embed "/
+            /" 요소(element) 선택자 "/
+            b{ color: violet;}
+            /" 클래스(class) 선택자 "/
+            c_name{ color:grey;}
+        </style>
+        <b>볼드체</b>
+        <div class="c_name">클래스 선택자</div>
     </body>
 </html>
