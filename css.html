@@ -111,19 +111,44 @@
             </style>
 
             <div class="color_sample"> 색상 입력방법</div>
+            <br>
 
             <style>
-                #block_targrt,#inline_targrt{
+                #block_target,#inline_target{
                     border: solid 1px black;
                     /*경계선: 실선 1px두께 검은선*/
                     width: 200px;  /* 넓이 : 200px */
                     height: 200px; /* 높이 : 200px */
-                    margin: 200px; /* 바깥여백 : 20px */
-                    padding: 30px; /* 바깥선 : 20px */
+                    margin: 20px; /* 바깥여백 : 20px */
+                    padding: 30px; /* 안쪽여백 : 30px */
+                    /* margin-top 위쪽 여백 : 10px */
+                    /* top right bottom left */
                 }
             </style>
             <div id="block_target">block형 태그</div>
             <span id="inline_target">inline형 태그</span>
 
+            <style>
+                #position_target{
+                    position: static; /*기본형*/
+                    /* 위치 : 정적인 */
+                    /* relative 관계형 */
+                    /* absolute 절대적인 */
+                    /* fixed 고정된 */
+                    position: absolute;
+                    top : 50px;
+                    left : 50px;
+                    /* top right bottom left */
+                }
+            </style>
+            <div id="position_target">position 연습</div>
+
+            <style>
+                #font_target{
+                    font family:'Tmon몬소리OTF Black','돋움',Dotum,sans-serif;
+                }
+            </style>
+            font 변경하기
+            <div id="font target"></div>
     </body>
 </html>
