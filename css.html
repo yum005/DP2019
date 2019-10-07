@@ -125,7 +125,7 @@
                     /* top right bottom left */
                 }
             </style>
-            <div id="block_target">block형 태그</div>
+            <div id="block_target">position 연습</div>
             <span id="inline_target">inline형 태그</span>
 
             <style>
@@ -135,7 +135,7 @@
                     /* relative 관계형 */
                     /* absolute 절대적인 */
                     /* fixed 고정된 */
-                    position: absolute;
+                    position: fixed;
                     top : 50px;
                     left : 50px;
                     /* top right bottom left */
@@ -145,10 +145,87 @@
 
             <style>
                 #font_target{
-                    font family:'Tmon몬소리OTF Black','돋움',Dotum,sans-serif;
+                    font-family:'Tmon몬소리OTF Black','돋움',Dotum,sans-serif;
+                    font-size: 30px;
+                    font-weight: bold;
+                    /* normal light bold bolder, 100,200,300,400 */
+                    /* 폰트에서 지원할 때만 표현 됨 */
+                    font-style: italic; /* 기울임체 */
+                    font-variant: small-caps; /* 작은 대문자 표기 */
                 }
             </style>
             font 변경하기
-            <div id="font target"></div>
+            <div id="font_target">
+                font 변경하기
+                Abcdefghijklmnopq
+            </div>
+
+            <style>
+                #align_target{
+                    text-align: center;
+                    width: 200px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    /*height: 100px;
+                    border: solid 1px black;
+                    vertical-align: middle;
+                    */
+                    text-decoration: underline;
+                    /* none, underline, overline, line-through */
+
+                }
+            </style>
+            <div id="align_target">글자 정렬 방식</div>
+
+            <style>
+                    /*
+                        baseline : 기준선에 정렬
+                        top : 위쪽정렬
+                        text-top : 위쪽정렬
+                        middle : 중앙정렬
+                        bottom : 하단정렬
+                        text-bottom : 하단정렬
+                    */
+                    #table_target td{
+                        width:150px;
+                        height:150px;
+                        border:solid 1px black;
+                    }
+                    #vartical_baseline{ vertical-align: baseline; }
+                    #vartical_top{ vertical-align: top; }
+                    #vartical_text_top{ vertical-align: text-top; }
+                    #vartical_middle{ vertical-align: middle; }
+                    #vertical_bottom{ vertical-align: bottom; }
+                    #vertical_text_bottom{ vertical-align: text-bottom; }
+                </style>
+                <table id="table_target">
+                    <tr>
+                        <td id="vartical_baseline">top</td>
+                        <td id="vartical_top">top</td>
+                        <td id="vartical_text_top">text_top</td>
+                        <td id="vartical_middle">middle</td>
+                        <td id="vertical_bottom">bottom</td>
+                        <td id="vertical_text_bottom">text_bottom</td>
+                    </tr>
+                </table>
+                
+        <style>
+            #space_target{
+                letter-spacing: 20px; /*글자 사이의 간격*/
+                line-height: 40px; /* 줄의 높이 */
+                text-indent: 50px; /* 첫줄 들여쓰기 */
+                text-transform: uppercase;
+                /* UPPERCASE, lowercase, Capitalize */
+                white-space: pre; /* 공백 및 줄내림 모두 표현 */
+            }
+        </style>
+        <div id="space_target">
+            AbCdEfGhIjKlMnOpQ
+            내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+            내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+            내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+            내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+            내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+        </div>
     </body>
 </html>
