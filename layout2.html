@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout2</title>
+        <mata charset="utf-8"/>
+        <style>
+            /* CSS 입력하는 곳 */
+            header{
+                background-color: #02918c;
+                color: white; /* 글자색은 상속 됩니다. */
+            }
+            header>h1>span:nth-child(2){
+                color: #cfc91d;
+            }
+            header>nav>ul{
+                margin: 12px 0px; /* 상하 좌우 */
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /* 상하 좌우 */
+            }
+            header>h1{
+                margin: 0px;
+            }
+            #wrab{
+                
+            }
+            .clear{
+                clear:both; /* float을 해제한다 */
+                height: 0; /* 높이 : 0; */
+                overflow: hidden; /* 넘치면: 숨김; */
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            #main_visual{
+                height: 400px;
+                background-image: url("image/layout2_visual.jpg");
+                background-size: auto 100%; /* 가로 세로 */
+                background-size: cover; /* 표지 처럼 */
+                background-repeat: no-repeat; /* 반복 방식 */
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */
+
+                color: white;
+                text-align: center;
+            }
+            #main_visual>h2{
+                font-size: 35px;
+                letter-spacing: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrab">
+            <header>
+                <h1 class="float_left">
+                    <span>MY</span><span>POLIO</span>
+                    <!-- div span 의미를 가지고 있지 않은 구획 나누기 -->
+                </h1>
+                <nav class="float_right">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>SERVICE</li>
+                        <li>MY WORK</li>
+                        <li>CONTACT ME</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div>
+                    Lorem ipsum dolor sit iusmod tempor
+                </div>
+                <h2>
+                    INCIDIDUNT BORE
+                </h2>
+                <div>
+                    Orem ipsum dolor sit amet, consectetur
+                </div>
+                <div>
+                    <img src="image/layout2_button.jpg">
+                </div>
+            </div>
+            <section>content1</section>
+            <section>content2</section>
+        </div>
+    </body>
+</html>
