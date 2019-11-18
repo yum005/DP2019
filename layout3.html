@@ -11,6 +11,12 @@
             .short_line{
                 width: 30px;
                 border-bottom: solid 1px gray;
+                margin: 10px 0px; /* 상하 좌우 */
+            }
+            .long_line{
+                width: 90px;
+                border-bottom: solid 1px gray;
+                margin: 10px 0px; /* 상하 좌우 */
             }
             header li{
                 float: left;
@@ -26,13 +32,67 @@
                 height: 0; /* 높이 : 0; */
                 overflow: hidden; /* 넘치면: 숨김; */
             }
+            .visual img{
+                display: inline; /* 인라인(기본) */
+                display: block; /* 블록 */
+            }
+            .visual div{
+                background-color: black;
+                color: white;
+                display: block; /* 표시방식: 블록형 */
+                display: inline-block; /* 표시방식: 인라인-블록 (절충식) */
+
+                padding: 2px 5px 5px 5px;
+                /* 상 우 하 좌 (위부터 시계방향) */
+
+                position: static; /* 위치선정방식 : 정적인 (기본) */
+                position: absolute; /* 절대적인 */
+                bottom: 0;
+                left: 0;
+                /* top left right bottom */
+            }
+            .visual{
+                position: static;
+                position: relative; /* 관계형 */
+                /* 자식인 absolute일때 Relaive인
+                부모는 자식의 기준이 됨 */
+            }
+            #content ul{
+                padding: 0px;
+            }
+            .card{
+                background-color: white;
+                border-right: solid 1px gray;
+                border-bottom: solid 1px gray;
+                width: 310px;
+
+                list-style: none;
+                float: left;
+                margin: 20px;
+            }
+            .info{
+                padding: 20px;
+            }
+            .info dl{
+                margin: 0px;
+            }
+            .info dt{
+                font-weight: bold;
+            }
+            .info dd{
+                margin: 0px;
+                font-size: 9px; /* 상속 */
+            }
+            .info .date{
+                color: gray;
+            }
         </style>
     </head>
     <body>
         <div id="wrap">
             <header>
                 <h1>Gridly</h1>
-                <div class="short_line"></div>
+                <div class="long_line"></div>
                 <nav>
                     <ul>
                         <li>home</li>
@@ -57,8 +117,8 @@
                             <dl>
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
-                                    <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="date">12th October 2011</div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -66,6 +126,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -82,7 +143,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -90,6 +151,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -106,7 +168,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -114,6 +176,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -130,7 +193,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -138,6 +201,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -154,7 +218,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -162,6 +226,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -178,7 +243,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -186,6 +251,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -202,7 +268,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -210,6 +276,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -226,7 +293,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -234,6 +301,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -250,7 +318,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -258,6 +326,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -274,7 +343,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -282,6 +351,7 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
@@ -298,7 +368,7 @@
                                 <dt>Dulux Colour Awards</dt>
                                 <dd>
                                     <div>12th October 2011</div>
-                                    <div class="short_line"></div>
+                                    <div class="long_line"></div>
                                     <p>
                                         A direct mail kit that announces the Dulux Colour
                                         Awards Competition has commenced. A collection
@@ -306,13 +376,28 @@
                                         advertises you add your own colours to history.
                                     </p>
                                     <div class="short_line"></div>
+                                    <div>Read On →</div>
                                 </dd>
                             </dl>
                         </div>
                     </li>
+                    <div class="clear"></div>
                 </ul>
             </div>
-            <footer>footer</footer>
+            <footer>
+                    <div class="short_line"></div>
+                    <img src="image/layout3_icon1.png">
+                    <img src="image/layout3_icon2.png">
+                    <img src="image/layout3_icon3.png">
+                    <img src="image/layout3_icon4.png">
+                    <div class="short_line"></div>
+                    <div>
+                        This website & the Internet Ends hereg
+                    </div>
+                    <div>
+                        Copyright 2011 Showcase Design www.BlazRobar.com
+                    </div>
+            </footer>
         </div>
     </body>
 </html>
