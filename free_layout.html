@@ -2,5 +2,230 @@
 <html>
     <head>
         <a href="index.html">뒤로가기</a><br/>
+        <title>free_layout</title>
+        <mata charset="utf-8"/>
+        <style>
+            /* CSS 입력하는 곳 */
+            header{
+                background-color: #F15F5F;
+                color: white; /* 글자색은 상속 됩니다. */
+                padding: 10px 50px; /* 상하 좌우 */
+            }
+            header>h1>span:nth-child(2){
+                color: #FFC19E;
+            }
+            header>nav>ul{
+                margin: 12px 0px; /* 상하 좌우 */
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /* 상하 좌우 */
+            }
+            header>h1{
+                margin: 0px;
+            }
+            body{
+                margin: 0px;
+            }
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .clear{
+                clear: both; /* float을 해제한다 */
+                height: 0; /* 높이 : 0; */
+                overflow: hidden; /* 넘치면: 숨김; */
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            #main_visual{
+                /* height: 400px; */
+                background-image: url("images/dessert1.jpg");
+                background-size: auto 100%; /* 가로 세로 */
+                background-size: cover; /* 표지 처럼 */
+                background-repeat: no-repeat; /* 반복 방식 */
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */
+
+                color: white;
+                text-align: center;
+                padding: 100px 0px; /* 상하 좌우 */
+            }
+            #main_visual>h2{
+                font-size: 35px;
+                letter-spacing: 3px;
+                margin: 8px 0px; /* 상하 좌우 */
+            }
+            #top_title{
+                font-size: 25px;
+            }
+            #bottom_title{
+                font-size: 15px;
+            }
+            #button_container{
+                margin-top: 100px;
+            }
+            section{
+                text-align: center;
+            }
+            section>h3{
+                color: #F15F5F;
+                margin: 30px 0px; /* 상하 좌우 */
+            }
+            section>p{
+                margin: 30px 0px; /* 상하 좌우 */
+                padding: 0px 100px; /* 상하 좌우 */
+            }
+            section>#about_list>li{
+                float: left;
+                list-style: none;
+                width: 25%; /* 100 / 4 = 25 */
+                width: calc(25% - (1px / 4 * 3) - 25px - 25px);
+
+                border-right: solid 1px #ccc;
+                padding: 25px;
+            }
+            section>#about_list>li:nth-child(4){
+                border: none;
+            }
+            section #about_list{
+                padding: 0px 80px; /* 상하 좌우 */
+            }
+            section dd{
+                margin: 0px;
+            }
+            section>#work_list{
+                padding: 0px;
+                margin: 0px;
+            }
+            section>#work_list>li{
+                float: left;
+                list-style: none;
+                width: 25%;
+            }
+            section>#work_list img{
+                width: 100%; /* 내가 쓸수 있는 공간 */
+                display: inline; /* 기본 = 인라인 */
+                display: block; /* 출력방식: 블록 */
+            }
+        </style>
     </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <span>CAFE</span> <span>DESSERT</span>
+                    <!-- div span 의미를 가지고 있지 않은 구획 나누기 -->
+                </h1>
+                <nav class="float_right">
+                    <ul>
+                        <li>BRAND</li>
+                        <li>SHOP</li>
+                        <li>MENU</li>
+                        <li>BEST</li>
+                        <li>EVENT</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div id="top_title">
+                    The Strawberry Season Begins!
+                </div>
+                <h2>
+                    STRAWBERRY DISSERT FESTIVAL
+                </h2>
+                <div id="bottom_title">
+                    share sweetness with flavorshare sweetness
+                </div>
+                <div id="button_container">
+                    <img src="images/button.png">
+                </div>
+            </div>
+            <section>
+                <h3>ABOUT ME</h3>
+                <P>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br>
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>
+                    commodo consequat duis aute irure dolor.
+                </P>
+                <ul id="about_list">
+                    <li>
+                        <img src="image/layout2_icon1.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod
+                                tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="image/layout2_icon2.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod
+                                tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="image/layout2_icon3.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod
+                                tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="image/layout2_icon4.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod
+                                tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <section>
+                <h3>MY WORK</h3>
+                <P>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </P>
+                <ul id="work_list">
+                    <li><img src="image/layout2_pic1.jpg"/></li>
+                    <li><img src="image/layout2_pic2.jpg"/></li>
+                    <li><img src="image/layout2_pic3.jpg"/></li>
+                    <li><img src="image/layout2_pic4.jpg"/></li>
+                    <li><img src="image/layout2_pic5.jpg"/></li>
+                    <li><img src="image/layout2_pic6.jpg"/></li>
+                    <li><img src="image/layout2_pic7.jpg"/></li>
+                    <li><img src="image/layout2_pic8.jpg"/></li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+        </div>
+    </body>
 </html>
