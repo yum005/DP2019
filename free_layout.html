@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <a href="index.html">뒤로가기</a><br/>
         <title>free_layout</title>
         <mata charset="utf-8"/>
         <style>
@@ -38,6 +37,26 @@
                 clear: both; /* float을 해제한다 */
                 height: 0; /* 높이 : 0; */
                 overflow: hidden; /* 넘치면: 숨김; */
+            }
+            footer{
+            background-color: #333;
+            color: #ccc; /* 글자 색깔 , 상속됨 */
+            padding: 15px;
+            font-size: 14px;
+            }
+            #icon_ul{
+            padding: 0px;
+            }
+            #icon_ul>li{
+            float: left;
+            list-style: none;
+            padding: 0px 1px; /* 상하 좌우 */
+            }
+            #footer-left{
+            float: left;
+            }
+            #icon_ul{
+            float: right;
             }
             .float_left{
                 float: left;
@@ -79,16 +98,17 @@
             section>h3{
                 color: #F15F5F;
                 margin: 30px 0px; /* 상하 좌우 */
-            }
-            section>p{
-                margin: 30px 0px; /* 상하 좌우 */
-                padding: 0px 100px; /* 상하 좌우 */
+                font-size: 24px;
             }
             section>#about_list>li{
                 float: left;
                 list-style: none;
                 width: 25%; /* 100 / 4 = 25 */
                 width: calc(25% - (1px / 4 * 3) - 25px - 25px);
+                font-family: "Univers LT Std 55";
+                font-weight: bold;
+                font-size: 22px;
+                color: salmon;
 
                 border-right: solid 1px #ccc;
                 padding: 25px;
@@ -100,7 +120,10 @@
                 padding: 0px 80px; /* 상하 좌우 */
             }
             section dd{
-                margin: 0px;
+                margin: 10px;
+                font-size: 18px;
+                font-family: Rix빤듯반듯 Medium;
+                color: saddlebrown;
             }
             section>#work_list{
                 padding: 0px;
@@ -119,6 +142,7 @@
         </style>
     </head>
     <body>
+        <a href="index.html">INDEX</a>
         <div id="wrap">
             <header>
                 <h1 class="float_left">
@@ -152,54 +176,41 @@
                 </div>
             </div>
             <section>
-                <h3>ABOUT ME</h3>
-                <P>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br>
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>
-                    commodo consequat duis aute irure dolor.
-                </P>
+                <h3>Dessert Type</h3>
                 <ul id="about_list">
                     <li>
-                        <img src="image/layout2_icon1.jpg"/>
+                        <img src="images/icon1.png"/>
                         <dl>
-                            <dt>Title goes here</dt>
+                            <dt>Biscuit</dt>
                             <dd>
-                                onsectetur adipisicing elit, sedo eiusmod
-                                tempor incidi
-                                et dolorerserss eerhfre mag.
+                                밀가루를 주원료로 하여 지방·우유·버터·달걀·당분·향료 등을 섞어서 반죽하여 여러 모양의 틀에 구워낸 마른과자. 
                             </dd>
                         </dl>
                     </li>
                     <li>
-                        <img src="image/layout2_icon2.jpg"/>
+                        <img src="images/icon2.png"/>
                         <dl>
-                            <dt>Title goes here</dt>
+                            <dt>Donut</dt>
                             <dd>
-                                onsectetur adipisicing elit, sedo eiusmod
-                                tempor incidi
-                                et dolorerserss eerhfre mag.
+                                도넛은 밀가루에 설탕, 계란, 우유, 지방, 이스트를 넣어 만든 반죽을 둥글게 빚어 안쪽에 구멍을 뚫거나 링 모양으로 만들어 기름에 튀긴 빵이다.
                             </dd>
                         </dl>
                     </li>
                     <li>
-                        <img src="image/layout2_icon3.jpg"/>
+                        <img src="images/icon3.png"/>
                         <dl>
-                            <dt>Title goes here</dt>
+                            <dt>Macaron</dt>
                             <dd>
-                                onsectetur adipisicing elit, sedo eiusmod
-                                tempor incidi
-                                et dolorerserss eerhfre mag.
+                                마카롱은 작고 동그란 모양의 머랭 크러스트 사이에 잼, 가나슈, 버터크림 등의 필링을 채워 만든 프랑스 쿠키이다.
                             </dd>
                         </dl>
                     </li>
                     <li>
-                        <img src="image/layout2_icon4.jpg"/>
+                        <img src="images/icon4.png"/>
                         <dl>
-                            <dt>Title goes here</dt>
+                            <dt>Ice cream</dt>
                             <dd>
-                                onsectetur adipisicing elit, sedo eiusmod
-                                tempor incidi
-                                et dolorerserss eerhfre mag.
+                                우유 또는 유지방 ·무지유고형분에 설탕 ·달걀 ·안정제(젤라틴 등) ·향료 ·색소 등을 넣고 휘저어서 얼린 빙과. 
                             </dd>
                         </dl>
                     </li>
@@ -207,25 +218,39 @@
                 </ul>
             </section>
             <section>
-                <h3>MY WORK</h3>
-                <P>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                </P>
+                <h3>MENU</h3>
                 <ul id="work_list">
-                    <li><img src="image/layout2_pic1.jpg"/></li>
-                    <li><img src="image/layout2_pic2.jpg"/></li>
-                    <li><img src="image/layout2_pic3.jpg"/></li>
-                    <li><img src="image/layout2_pic4.jpg"/></li>
-                    <li><img src="image/layout2_pic5.jpg"/></li>
-                    <li><img src="image/layout2_pic6.jpg"/></li>
-                    <li><img src="image/layout2_pic7.jpg"/></li>
-                    <li><img src="image/layout2_pic8.jpg"/></li>
+                    <li><img src="images/d1.png"/></li>
+                    <li><img src="images/d2.png"/></li>
+                    <li><img src="images/d3.png"/></li>
+                    <li><img src="images/d4.png"/></li>
+                    <li><img src="images/d5.png"/></li>
+                    <li><img src="images/d6.png"/></li>
+                    <li><img src="images/d7.png"/></li>
+                    <li><img src="images/d8.png"/></li>
                     <div class="clear"></div>
                 </ul>
             </section>
         </div>
+        <footer>
+                <div id="footer-left">
+                <p>
+                    ⓒ 2019 YUM design. All Right Reserved.
+                </p>
+                <p>
+                    the loges in the design are the property of their
+                    respective owners/copyright holders.
+                </p>
+                </div>
+                <ul id="icon_ul">
+                    <li><img src="image/layout1_footer_icon1.png"/></li>
+                    <li><img src="image/layout1_footer_icon2.png"/></li>
+                    <li><img src="image/layout1_footer_icon3.png"/></li>
+                    <li><img src="image/layout1_footer_icon4.png"/></li>
+                    <li><img src="image/layout1_footer_icon5.png"/></li>
+                    <li><img src="image/layout1_footer_icon6.png"/></li>
+                </ul>
+                <div class="clear"></div>
+        </footer>
     </body>
 </html>
